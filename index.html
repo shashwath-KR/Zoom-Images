@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="card">
+        <h1>Zoom your Favorite Photos</h1>
+        <div class="align">
+          <button id="left">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+          </button>
+          <div id="counts" class="imag"></div>
+          <button id="right">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="dots">
+          <div onclick="onDots(0, this)" class="dot"></div>
+          <div onclick="onDots(1, this)" class="dot"></div>
+          <div onclick="onDots(2, this)" class="dot"></div>
+          <div onclick="onDots(3, this)" class="dot"></div>
+          <div onclick="onDots(4, this)" class="dot"></div>
+        </div>
+      </div>
+    </section>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.0/axios.min.js"
+    ></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
